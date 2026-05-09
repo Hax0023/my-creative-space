@@ -95,16 +95,18 @@ const PROJECTS = [
 ];
 
 const EXPERTISE = [
+  "Application Security",
+  "Detection Engineering",
+  "SIEM & SOC Operations",
+  "Incident Response",
+  "Secure Code Review",
+  "DevSecOps",
+  "Threat Modeling",
   "Penetration Testing",
   "Red Teaming",
-  "Cloud Security Posture (CSPM)",
-  "Network Security",
-  "Vulnerability Assessment",
   "AI Security",
-  "DevSecOps",
-  "Architecture Reviews",
-  "Risk Management",
-  "Security Metrics & Reporting",
+  "Cloud Security Posture (CSPM)",
+  "Vulnerability Assessment",
 ];
 
 const TOOLS = [
@@ -198,21 +200,24 @@ function Hero() {
             Portfolio · CV · Cybersecurity
           </p>
           <h1 className="font-display text-[13vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[104px] xl:text-[136px]">
-            Offensive
+            From red
             <br />
-            <span className="italic text-muted-foreground">security</span>,
+            to <span className="italic text-muted-foreground">blue</span>
             <br />
-            from circuit
+            — building
             <br />
-            to cloud.
+            what I broke.
           </h1>
         </div>
         <div className="col-span-12 lg:col-span-4 lg:col-start-9 lg:pt-8 reveal" style={{ animationDelay: "0.2s" }}>
           <p className="text-balance text-lg leading-relaxed text-foreground/80 md:text-xl">
-            I'm <span className="font-medium">Supreeth Soundarapandiyan</span> — a former EY
-            offensive-security consultant now pursuing an{" "}
-            <span className="font-medium">M.S. in Cybersecurity at Northeastern University</span>.
-            I work across red teaming, penetration testing and AI security research.
+            I'm <span className="font-medium">Supreeth Soundarapandiyan</span>. I spent two years
+            on the offensive side at <span className="font-medium">EY</span> — red teaming,
+            pentesting and AI security. Now at{" "}
+            <span className="font-medium">Northeastern University</span> I'm pivoting toward{" "}
+            <span className="font-medium">blue team</span> and{" "}
+            <span className="font-medium">application security</span>, using an attacker's eye
+            to build stronger defenses.
           </p>
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-border pt-6 font-display text-sm">
             <div>
@@ -228,7 +233,7 @@ function Hero() {
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Focus</dt>
-              <dd className="mt-1">Red Team · AI Sec · Cloud</dd>
+              <dd className="mt-1">Blue Team · AppSec</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Status</dt>
@@ -243,12 +248,12 @@ function Hero() {
 
 function Marquee() {
   const items = [
-    "Red Teaming",
-    "Penetration Testing",
+    "Blue Team",
+    "Application Security",
+    "Detection Engineering",
+    "Red Team",
     "AI Security",
     "Cloud Security",
-    "Network Security",
-    "DevSecOps",
   ];
   const row = [...items, ...items];
   return (
@@ -274,9 +279,11 @@ function About() {
         </div>
         <div className="col-span-12 lg:col-span-7 lg:col-start-5">
           <p className="font-display text-2xl font-light leading-snug tracking-tight text-balance md:text-4xl">
-            Former EY consultant working at the intersection of hardware and software security.
-            I simulate real adversaries — across networks, web, mobile, hardware and AI systems —
-            and turn the findings into things teams can actually fix.
+            My background is <span className="italic">red team</span> — two years at EY breaking
+            into networks, applications and AI systems. At Northeastern I'm leaning into the other
+            side of the table: <span className="italic">blue team</span> and{" "}
+            <span className="italic">application security</span>, where the same attacker mindset
+            is used to design defenses, harden code and catch threats earlier.
           </p>
           <div className="mt-12 grid gap-10 md:grid-cols-2">
             <div>
