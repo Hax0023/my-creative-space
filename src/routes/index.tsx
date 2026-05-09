@@ -494,7 +494,7 @@ function Contact() {
               href="https://www.linkedin.com/in/supreeth-soundarapandiyan-2a0a42253/"
               handle="/in/supreeth-soundarapandiyan"
             />
-            <Social label="GitHub" href="#" handle="@supreeth" />
+            <Social label="GitHub" href="https://github.com/Hax0023/" handle="@Hax0023" />
             <Social
               label="Résumé"
               href={RESUME_URL}
