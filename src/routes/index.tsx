@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import portrait from "@/assets/supreeth.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
