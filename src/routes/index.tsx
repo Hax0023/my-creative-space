@@ -286,27 +286,30 @@ function About() {
   return (
     <section id="about" className="border-b border-border">
       <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-6 px-6 py-20 md:gap-10 md:px-10 md:py-32">
-        <div className="col-span-12 lg:col-span-3">
+        <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="01" label="About" />
-        </div>
-        <div className="col-span-12 lg:col-span-7 lg:col-start-5">
-          <p className="font-display text-2xl font-light leading-snug tracking-tight text-balance md:text-4xl">
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            A short introduction — who I am, where I've been and where I'm headed.
+          </p>
+        </aside>
+        <div className="col-span-12 lg:col-span-8 lg:col-start-5">
+          <p className="font-display text-3xl font-light leading-[1.15] tracking-tight text-balance md:text-[44px] xl:text-5xl">
             My background is <span className="italic">red team</span> — two years at EY breaking
             into networks, applications and AI systems. At Northeastern I'm leaning into the other
             side of the table: <span className="italic">blue team</span> and{" "}
             <span className="italic">application security</span>, where the same attacker mindset
             is used to design defenses, harden code and catch threats earlier.
           </p>
-          <div className="mt-12 grid gap-10 md:grid-cols-2">
+          <div className="mt-14 grid gap-12 md:grid-cols-2">
             <div>
               <h3 className="font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
                 Areas of Expertise
               </h3>
-              <ul className="mt-3 flex flex-wrap gap-2">
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {EXPERTISE.map((s) => (
                   <li
                     key={s}
-                    className="rounded-full border border-foreground/20 px-3 py-1 text-xs text-foreground/80"
+                    className="rounded-full border border-foreground/20 px-3.5 py-1.5 text-sm text-foreground/80"
                   >
                     {s}
                   </li>
@@ -317,11 +320,11 @@ function About() {
               <h3 className="font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
                 Tools & Technologies
               </h3>
-              <ul className="mt-3 flex flex-wrap gap-2">
+              <ul className="mt-4 flex flex-wrap gap-2">
                 {TOOLS.map((s) => (
                   <li
                     key={s}
-                    className="rounded-full border border-foreground/20 px-3 py-1 text-xs text-foreground/80"
+                    className="rounded-full border border-foreground/20 px-3.5 py-1.5 text-sm text-foreground/80"
                   >
                     {s}
                   </li>
@@ -339,28 +342,32 @@ function Experience() {
   return (
     <section id="experience" className="border-b border-border bg-secondary/40">
       <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-6 px-6 py-20 md:gap-10 md:px-10 md:py-32">
-        <div className="col-span-12 lg:col-span-3">
+        <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="02" label="Experience" />
-        </div>
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            Three years at Ernst & Young — from summer intern to associate consultant on the
+            offensive security team.
+          </p>
+        </aside>
         <div className="col-span-12 lg:col-span-9">
-          <ol className="space-y-12">
+          <ol className="space-y-14">
             {EXPERIENCE.map((e) => (
               <li
                 key={e.role + e.year}
-                className="grid grid-cols-12 gap-4 border-t border-border pt-6 md:gap-8"
+                className="grid grid-cols-12 gap-4 border-t border-border pt-8 md:gap-8"
               >
                 <div className="col-span-12 font-display text-xs uppercase tracking-[0.22em] text-muted-foreground md:col-span-3">
                   {e.year}
                 </div>
                 <div className="col-span-12 md:col-span-9">
-                  <h3 className="font-display text-2xl font-medium tracking-tight md:text-3xl">
+                  <h3 className="font-display text-3xl font-medium tracking-tight md:text-4xl">
                     {e.role}
                   </h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{e.company}</p>
-                  <ul className="mt-4 space-y-2.5 text-foreground/80">
+                  <p className="mt-1.5 text-base text-muted-foreground">{e.company}</p>
+                  <ul className="mt-6 space-y-3.5 text-base leading-relaxed text-foreground/85 md:text-lg">
                     {e.points.map((p, i) => (
-                      <li key={i} className="flex gap-3 leading-relaxed">
-                        <span className="mt-2 inline-block h-px w-3 flex-shrink-0 bg-foreground/50" />
+                      <li key={i} className="flex gap-4">
+                        <span className="mt-3 inline-block h-px w-4 flex-shrink-0 bg-foreground/50" />
                         <span>{p}</span>
                       </li>
                     ))}
@@ -370,19 +377,19 @@ function Experience() {
             ))}
           </ol>
 
-          <h3 className="mt-20 font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
+          <h3 className="mt-24 font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
             Education
           </h3>
           <ul className="mt-6 divide-y divide-border border-t border-border">
             {EDUCATION.map((ed) => (
-              <li key={ed.title} className="py-5 md:grid md:grid-cols-12 md:items-baseline md:gap-8">
+              <li key={ed.title} className="py-6 md:grid md:grid-cols-12 md:items-baseline md:gap-8">
                 <p className="font-display text-[11px] uppercase tracking-[0.22em] text-muted-foreground md:col-span-3">
                   {ed.year}
                 </p>
                 <div className="mt-2 md:col-span-9 md:mt-0">
-                  <p className="font-display text-lg leading-snug">{ed.title}</p>
-                  <p className="mt-0.5 text-sm text-muted-foreground">{ed.place}</p>
-                  <p className="mt-1 text-sm text-foreground/70">{ed.notes}</p>
+                  <p className="font-display text-xl leading-snug md:text-2xl">{ed.title}</p>
+                  <p className="mt-1 text-base text-muted-foreground">{ed.place}</p>
+                  <p className="mt-1.5 text-base text-foreground/75">{ed.notes}</p>
                 </div>
               </li>
             ))}
@@ -397,12 +404,12 @@ function Projects() {
   return (
     <section id="projects" className="border-b border-border">
       <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-6 px-6 py-20 md:gap-10 md:px-10 md:py-32">
-        <div className="col-span-12 lg:col-span-3">
+        <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="03" label="Projects & Research" />
-          <p className="mt-6 max-w-xs text-sm text-muted-foreground">
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Selected academic and personal work in offensive and defensive security.
           </p>
-        </div>
+        </aside>
         <ul className="col-span-12 lg:col-span-9">
           {PROJECTS.map((p, i) => (
             <li
@@ -415,10 +422,10 @@ function Projects() {
                 {p.n}
               </span>
               <div className="col-span-10 md:col-span-6">
-                <h3 className="font-display text-2xl font-medium tracking-tight md:text-4xl">
+                <h3 className="font-display text-3xl font-medium tracking-tight md:text-5xl">
                   {p.title}
                 </h3>
-                <p className="mt-2 text-sm text-foreground/70 group-hover:text-background/70">
+                <p className="mt-3 text-base leading-relaxed text-foreground/75 group-hover:text-background/75 md:text-lg">
                   {p.blurb}
                 </p>
               </div>
@@ -438,9 +445,12 @@ function CertsClubs() {
   return (
     <section className="border-b border-border bg-secondary/40">
       <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-6 px-6 py-20 md:gap-10 md:px-10 md:py-28">
-        <div className="col-span-12 lg:col-span-3">
+        <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="04" label="Certifications & Clubs" />
-        </div>
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            Credentials, memberships and the communities I'm part of.
+          </p>
+        </aside>
         <div className="col-span-12 grid gap-12 lg:col-span-9 md:grid-cols-2">
           <div>
             <h3 className="font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
@@ -448,9 +458,9 @@ function CertsClubs() {
             </h3>
             <ul className="mt-4 divide-y divide-border border-y border-border">
               {CERTIFICATIONS.map((c) => (
-                <li key={c.name} className="py-4">
-                  <p className="font-display text-base">{c.name}</p>
-                  <p className="mt-1 font-display text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                <li key={c.name} className="py-5">
+                  <p className="font-display text-lg leading-snug">{c.name}</p>
+                  <p className="mt-1.5 font-display text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
                     {c.year}
                   </p>
                 </li>
@@ -463,9 +473,9 @@ function CertsClubs() {
             </h3>
             <ul className="mt-4 divide-y divide-border border-y border-border">
               {CLUBS.map((c) => (
-                <li key={c.name} className="py-4">
-                  <p className="font-display text-base">{c.name}</p>
-                  <p className="mt-1 text-sm text-muted-foreground">{c.role}</p>
+                <li key={c.name} className="py-5">
+                  <p className="font-display text-lg leading-snug">{c.name}</p>
+                  <p className="mt-1.5 text-base text-muted-foreground">{c.role}</p>
                 </li>
               ))}
             </ul>
