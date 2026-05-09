@@ -95,16 +95,18 @@ const PROJECTS = [
 ];
 
 const EXPERTISE = [
+  "Application Security",
+  "Detection Engineering",
+  "SIEM & SOC Operations",
+  "Incident Response",
+  "Secure Code Review",
+  "DevSecOps",
+  "Threat Modeling",
   "Penetration Testing",
   "Red Teaming",
-  "Cloud Security Posture (CSPM)",
-  "Network Security",
-  "Vulnerability Assessment",
   "AI Security",
-  "DevSecOps",
-  "Architecture Reviews",
-  "Risk Management",
-  "Security Metrics & Reporting",
+  "Cloud Security Posture (CSPM)",
+  "Vulnerability Assessment",
 ];
 
 const TOOLS = [
