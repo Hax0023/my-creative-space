@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowUpRight, Mail, MapPin, Phone } from "lucide-react";
+import portrait from "@/assets/supreeth.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -210,6 +211,18 @@ function Hero() {
           </h1>
         </div>
         <div className="col-span-12 lg:col-span-4 lg:col-start-9 lg:pt-8 reveal" style={{ animationDelay: "0.2s" }}>
+          <figure className="mb-8 overflow-hidden border border-border bg-secondary">
+            <img
+              src={portrait}
+              alt="Supreeth Soundarapandiyan, with the Taj Mahal visible in the distant background."
+              loading="eager"
+              className="aspect-[4/5] w-full object-cover object-[80%_30%] grayscale transition-all duration-700 hover:grayscale-0"
+            />
+            <figcaption className="flex items-center justify-between border-t border-border px-3 py-2 font-display text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+              <span>Pl. 01</span>
+              <span>Agra, IN</span>
+            </figcaption>
+          </figure>
           <p className="text-balance text-lg leading-relaxed text-foreground/80 md:text-xl">
             I'm <span className="font-medium">Supreeth Soundarapandiyan</span>. I spent two years
             on the offensive side at <span className="font-medium">EY</span> — red teaming,
