@@ -231,7 +231,7 @@ function Hero() {
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Focus</dt>
-              <dd className="mt-1">Red Team · AI Sec · Cloud</dd>
+              <dd className="mt-1">Blue Team · AppSec</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Status</dt>
@@ -246,12 +246,12 @@ function Hero() {
 
 function Marquee() {
   const items = [
-    "Red Teaming",
-    "Penetration Testing",
+    "Blue Team",
+    "Application Security",
+    "Detection Engineering",
+    "Red Team",
     "AI Security",
     "Cloud Security",
-    "Network Security",
-    "DevSecOps",
   ];
   const row = [...items, ...items];
   return (
