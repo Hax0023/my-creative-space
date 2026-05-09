@@ -218,9 +218,8 @@ function Hero() {
               loading="eager"
               className="aspect-[4/5] w-full object-cover object-[80%_30%] grayscale transition-all duration-700 hover:grayscale-0"
             />
-            <figcaption className="flex items-center justify-between border-t border-border px-3 py-2 font-display text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
-              <span>Pl. 01</span>
-              <span>Agra, IN</span>
+            <figcaption className="border-t border-border px-3 py-2 font-display text-[10px] uppercase tracking-[0.22em] text-muted-foreground">
+              Pl. 01
             </figcaption>
           </figure>
           <p className="text-balance text-lg leading-relaxed text-foreground/80 md:text-xl">
