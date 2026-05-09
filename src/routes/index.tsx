@@ -404,12 +404,12 @@ function Projects() {
   return (
     <section id="projects" className="border-b border-border">
       <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-6 px-6 py-20 md:gap-10 md:px-10 md:py-32">
-        <div className="col-span-12 lg:col-span-3">
+        <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="03" label="Projects & Research" />
-          <p className="mt-6 max-w-xs text-sm text-muted-foreground">
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
             Selected academic and personal work in offensive and defensive security.
           </p>
-        </div>
+        </aside>
         <ul className="col-span-12 lg:col-span-9">
           {PROJECTS.map((p, i) => (
             <li
@@ -422,10 +422,10 @@ function Projects() {
                 {p.n}
               </span>
               <div className="col-span-10 md:col-span-6">
-                <h3 className="font-display text-2xl font-medium tracking-tight md:text-4xl">
+                <h3 className="font-display text-3xl font-medium tracking-tight md:text-5xl">
                   {p.title}
                 </h3>
-                <p className="mt-2 text-sm text-foreground/70 group-hover:text-background/70">
+                <p className="mt-3 text-base leading-relaxed text-foreground/75 group-hover:text-background/75 md:text-lg">
                   {p.blurb}
                 </p>
               </div>
@@ -445,9 +445,12 @@ function CertsClubs() {
   return (
     <section className="border-b border-border bg-secondary/40">
       <div className="mx-auto grid max-w-[1400px] grid-cols-12 gap-6 px-6 py-20 md:gap-10 md:px-10 md:py-28">
-        <div className="col-span-12 lg:col-span-3">
+        <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="04" label="Certifications & Clubs" />
-        </div>
+          <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
+            Credentials, memberships and the communities I'm part of.
+          </p>
+        </aside>
         <div className="col-span-12 grid gap-12 lg:col-span-9 md:grid-cols-2">
           <div>
             <h3 className="font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
