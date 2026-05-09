@@ -458,9 +458,9 @@ function CertsClubs() {
             </h3>
             <ul className="mt-4 divide-y divide-border border-y border-border">
               {CERTIFICATIONS.map((c) => (
-                <li key={c.name} className="py-4">
-                  <p className="font-display text-base">{c.name}</p>
-                  <p className="mt-1 font-display text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
+                <li key={c.name} className="py-5">
+                  <p className="font-display text-lg leading-snug">{c.name}</p>
+                  <p className="mt-1.5 font-display text-[11px] uppercase tracking-[0.22em] text-muted-foreground">
                     {c.year}
                   </p>
                 </li>
@@ -473,9 +473,9 @@ function CertsClubs() {
             </h3>
             <ul className="mt-4 divide-y divide-border border-y border-border">
               {CLUBS.map((c) => (
-                <li key={c.name} className="py-4">
-                  <p className="font-display text-base">{c.name}</p>
-                  <p className="mt-1 text-sm text-muted-foreground">{c.role}</p>
+                <li key={c.name} className="py-5">
+                  <p className="font-display text-lg leading-snug">{c.name}</p>
+                  <p className="mt-1.5 text-base text-muted-foreground">{c.role}</p>
                 </li>
               ))}
             </ul>
