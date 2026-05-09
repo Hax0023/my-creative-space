@@ -4,15 +4,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-@layer base {
-  @font-face {
-    font-family: "Space Grotesk";
-    src: url("https://fonts.gstatic.com/s/spacegrotesk/v16/V8mDoQDjQSkFtoMM3T6r8E7mF71Q-gOoraIAEj7oUUxjLA.woff2") format("woff2");
-    font-weight: 300 700;
-    font-display: swap;
-  }
-}
-
 @theme inline {
   --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
