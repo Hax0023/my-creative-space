@@ -198,21 +198,24 @@ function Hero() {
             Portfolio · CV · Cybersecurity
           </p>
           <h1 className="font-display text-[13vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[104px] xl:text-[136px]">
-            Offensive
+            From red
             <br />
-            <span className="italic text-muted-foreground">security</span>,
+            to <span className="italic text-muted-foreground">blue</span>
             <br />
-            from circuit
+            — building
             <br />
-            to cloud.
+            what I broke.
           </h1>
         </div>
         <div className="col-span-12 lg:col-span-4 lg:col-start-9 lg:pt-8 reveal" style={{ animationDelay: "0.2s" }}>
           <p className="text-balance text-lg leading-relaxed text-foreground/80 md:text-xl">
-            I'm <span className="font-medium">Supreeth Soundarapandiyan</span> — a former EY
-            offensive-security consultant now pursuing an{" "}
-            <span className="font-medium">M.S. in Cybersecurity at Northeastern University</span>.
-            I work across red teaming, penetration testing and AI security research.
+            I'm <span className="font-medium">Supreeth Soundarapandiyan</span>. I spent two years
+            on the offensive side at <span className="font-medium">EY</span> — red teaming,
+            pentesting and AI security. Now at{" "}
+            <span className="font-medium">Northeastern University</span> I'm pivoting toward{" "}
+            <span className="font-medium">blue team</span> and{" "}
+            <span className="font-medium">application security</span>, using an attacker's eye
+            to build stronger defenses.
           </p>
           <dl className="mt-10 grid grid-cols-2 gap-6 border-t border-border pt-6 font-display text-sm">
             <div>
