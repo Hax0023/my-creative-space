@@ -279,9 +279,11 @@ function About() {
         </div>
         <div className="col-span-12 lg:col-span-7 lg:col-start-5">
           <p className="font-display text-2xl font-light leading-snug tracking-tight text-balance md:text-4xl">
-            Former EY consultant working at the intersection of hardware and software security.
-            I simulate real adversaries — across networks, web, mobile, hardware and AI systems —
-            and turn the findings into things teams can actually fix.
+            My background is <span className="italic">red team</span> — two years at EY breaking
+            into networks, applications and AI systems. At Northeastern I'm leaning into the other
+            side of the table: <span className="italic">blue team</span> and{" "}
+            <span className="italic">application security</span>, where the same attacker mindset
+            is used to design defenses, harden code and catch threats earlier.
           </p>
           <div className="mt-12 grid gap-10 md:grid-cols-2">
             <div>
