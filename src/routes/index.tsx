@@ -354,18 +354,15 @@ function Experience() {
           <h3 className="mt-20 font-display text-xs uppercase tracking-[0.22em] text-muted-foreground">
             Education
           </h3>
-          <ul className="mt-6 divide-y divide-border border-y border-border">
+          <ul className="mt-6 divide-y divide-border border-t border-border">
             {EDUCATION.map((ed) => (
-              <li
-                key={ed.title}
-                className="grid grid-cols-12 items-baseline gap-4 py-5 md:gap-8"
-              >
-                <p className="col-span-12 font-display text-xs uppercase tracking-[0.22em] text-muted-foreground md:col-span-3">
+              <li key={ed.title} className="py-5 md:grid md:grid-cols-12 md:items-baseline md:gap-8">
+                <p className="font-display text-[11px] uppercase tracking-[0.22em] text-muted-foreground md:col-span-3">
                   {ed.year}
                 </p>
-                <div className="col-span-12 md:col-span-9">
-                  <p className="font-display text-lg">{ed.title}</p>
-                  <p className="text-sm text-muted-foreground">{ed.place}</p>
+                <div className="mt-2 md:col-span-9 md:mt-0">
+                  <p className="font-display text-lg leading-snug">{ed.title}</p>
+                  <p className="mt-0.5 text-sm text-muted-foreground">{ed.place}</p>
                   <p className="mt-1 text-sm text-foreground/70">{ed.notes}</p>
                 </div>
               </li>
