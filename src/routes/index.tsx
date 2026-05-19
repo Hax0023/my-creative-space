@@ -136,7 +136,7 @@ const CLUBS = [
   { name: "NEU Cybersecurity Club", role: "Member · Northeastern University" },
 ];
 
-const RESUME_URL = "/resume/Supreeth Soundarapandiyan - Resume.docx";
+const RESUME_URL = "/resume/Supreeth-Soundarapandiyan-Resume.docx";
 
 function Index() {
   return (
