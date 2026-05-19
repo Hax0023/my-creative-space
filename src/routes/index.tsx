@@ -84,6 +84,7 @@ const PROJECTS = [
     year: "Mar 2026",
     blurb:
       "Built a network monitoring stack on Kali with Wazuh SIEM + Suricata IDS/IPS (64,646+ detection rules). Integrated a locally-hosted LLM to autonomously triage alerts, with a SOAR engine running playbooks for IP blocking and analyst notification.",
+    github: "https://github.com/Hax0023/AI-SOC",
   },
   {
     n: "02",
@@ -431,6 +432,13 @@ function Projects() {
               <div className="col-span-12 mt-3 flex flex-col gap-1 font-display text-xs uppercase tracking-[0.18em] text-muted-foreground group-hover:text-background/60 md:col-span-4 md:mt-0 md:items-end md:text-right">
                 <span>{p.tag}</span>
                 <span>{p.year}</span>
+                {p.github && (
+                  <a href={p.github} target="_blank" rel="noopener noreferrer"
+                    className="mt-1 underline underline-offset-2 hover:opacity-70"
+                    onClick={(e) => e.stopPropagation()}>
+                    GitHub ↗
+                  </a>
+                )}
               </div>
             </li>
           ))}
