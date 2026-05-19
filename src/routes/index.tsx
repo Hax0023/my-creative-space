@@ -5,13 +5,13 @@ import portrait from "@/assets/supreeth.jpg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Supreeth Soundarapandiyan — Cybersecurity Portfolio" },
+      { title: "Supreeth Soundarapandiyan - Cybersecurity Portfolio" },
       {
         name: "description",
         content:
-          "Supreeth Soundarapandiyan — offensive security professional and MS Cybersecurity candidate at Northeastern University. Penetration testing, red teaming, AI security.",
+          "Supreeth Soundarapandiyan - offensive security professional and MS Cybersecurity candidate at Northeastern University. Penetration testing, red teaming, AI security.",
       },
-      { property: "og:title", content: "Supreeth Soundarapandiyan — Cybersecurity Portfolio" },
+      { property: "og:title", content: "Supreeth Soundarapandiyan - Cybersecurity Portfolio" },
       {
         property: "og:description",
         content:
@@ -31,19 +31,19 @@ const NAV = [
 
 const EXPERIENCE = [
   {
-    year: "Oct 2024 — Aug 2025",
+    year: "Oct 2024 - Aug 2025",
     role: "Associate Consultant",
-    company: "Ernst & Young LLP — Bengaluru, India",
+    company: "Ernst & Young LLP - Bengaluru, India",
     points: [
       "Executed red team engagements against enterprise network infrastructure, identifying misconfigurations across external-facing systems, escalating privileges to domain admin, and delivering structured remediation reports to engineering teams.",
-      "Performed adversarial testing of generative AI systems — probing for prompt injection, data leakage and misuse — uncovering hidden risks and informing safer AI deployment policies.",
+      "Performed adversarial testing of generative AI systems - probing for prompt injection, data leakage and misuse - uncovering hidden risks and informing safer AI deployment policies.",
       "Designed 5+ phishing and impersonation campaigns, boosting awareness by 30% and driving measurable defensive improvements.",
     ],
   },
   {
-    year: "Aug 2023 — Sep 2024",
+    year: "Aug 2023 - Sep 2024",
     role: "Senior Analyst",
-    company: "Ernst & Young LLP — Bengaluru, India",
+    company: "Ernst & Young LLP - Bengaluru, India",
     points: [
       "Leveraged findings from web, infrastructure, mobile and thick-client penetration tests to contribute to the firm's threat intelligence platform, helping develop new detection rules for security monitoring tools.",
       "Executed source code analysis and infrastructure security reviews on 20+ cloud-hosted applications (AWS, Azure), producing structured remediation reports supporting network modernization.",
@@ -51,9 +51,9 @@ const EXPERIENCE = [
     ],
   },
   {
-    year: "Feb 2023 — Jul 2023",
+    year: "Feb 2023 - Jul 2023",
     role: "Summer Intern",
-    company: "Ernst & Young LLP — Bengaluru, India",
+    company: "Ernst & Young LLP - Bengaluru, India",
     points: [
       "Assisted senior engineers in security assessment engagements, applying structured methodologies to document network vulnerabilities in live environments.",
       "Strengthened network security skills through HackTheBox and TryHackMe CTF competitions.",
@@ -63,15 +63,15 @@ const EXPERIENCE = [
 
 const EDUCATION = [
   {
-    year: "Sep 2025 — May 2027",
+    year: "Sep 2025 - May 2027",
     title: "M.S. in Cybersecurity",
-    place: "Northeastern University · Khoury College of Computer Sciences — Boston, MA",
+    place: "Northeastern University · Khoury College of Computer Sciences - Boston, MA",
     notes: "Coursework: Network Security Practices, Decision Making in CIKR.",
   },
   {
-    year: "Jul 2019 — May 2023",
+    year: "Jul 2019 - May 2023",
     title: "B.E. in Electronics & Communication",
-    place: "CMR Institute of Technology — Bengaluru, India",
+    place: "CMR Institute of Technology - Bengaluru, India",
     notes: "Coursework: Computer Networks, Network Security, Cryptography.",
   },
 ];
@@ -129,8 +129,8 @@ const TOOLS = [
 ];
 
 const CERTIFICATIONS = [
-  { name: "Microsoft Azure Security Engineer Associate (AZ-500)", year: "Oct 2023 — Oct 2024" },
-  { name: "Microsoft Azure Fundamentals (AZ-900)", year: "Aug 2023 — Present" },
+  { name: "Microsoft Azure Security Engineer Associate (AZ-500)", year: "Oct 2023 - Oct 2024" },
+  { name: "Microsoft Azure Fundamentals (AZ-900)", year: "Aug 2023 - Present" },
 ];
 
 const CLUBS = [
@@ -201,11 +201,11 @@ function Hero() {
             Portfolio · CV · Cybersecurity
           </p>
           <h1 className="font-display text-[13vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[104px] xl:text-[136px]">
-            From red
+            From <span className="text-red-500">red</span>
             <br />
-            to <span className="italic text-muted-foreground">blue</span>
+            to <span className="italic text-blue-500">blue</span>
             <br />
-            — building
+            - building
             <br />
             what I broke.
           </h1>
@@ -224,7 +224,7 @@ function Hero() {
           </figure>
           <p className="text-balance text-lg leading-relaxed text-foreground/80 md:text-xl">
             I'm <span className="font-medium">Supreeth Soundarapandiyan</span>. I spent two years
-            on the offensive side at <span className="font-medium">EY</span> — red teaming,
+            on the offensive side at <span className="font-medium">EY</span> - red teaming,
             pentesting and AI security. Now at{" "}
             <span className="font-medium">Northeastern University</span> I'm pivoting toward{" "}
             <span className="font-medium">blue team</span> and{" "}
@@ -241,7 +241,7 @@ function Hero() {
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Available</dt>
-              <dd className="mt-1">May — Dec 2026</dd>
+              <dd className="mt-1">May - Dec 2026</dd>
             </div>
             <div>
               <dt className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Focus</dt>
@@ -289,12 +289,12 @@ function About() {
         <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="01" label="About" />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            A short introduction — who I am, where I've been and where I'm headed.
+            A short introduction - who I am, where I've been and where I'm headed.
           </p>
         </aside>
         <div className="col-span-12 lg:col-span-8 lg:col-start-5">
           <p className="font-display text-3xl font-light leading-[1.15] tracking-tight text-balance md:text-[44px] xl:text-5xl">
-            My background is <span className="italic">red team</span> — two years at EY breaking
+            My background is <span className="italic">red team</span> - two years at EY breaking
             into networks, applications and AI systems. At Northeastern I'm leaning into the other
             side of the table: <span className="italic">blue team</span> and{" "}
             <span className="italic">application security</span>, where the same attacker mindset
@@ -345,7 +345,7 @@ function Experience() {
         <aside className="col-span-12 lg:sticky lg:top-24 lg:col-span-3 lg:self-start">
           <SectionLabel n="02" label="Experience" />
           <p className="mt-6 max-w-xs text-sm leading-relaxed text-muted-foreground">
-            Three years at Ernst & Young — from summer intern to associate consultant on the
+            Three years at Ernst & Young - from summer intern to associate consultant on the
             offensive security team.
           </p>
         </aside>
@@ -500,7 +500,7 @@ function Contact() {
         <div className="col-span-12 lg:col-span-3">
           <p className="flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.28em] text-background/60">
             <span className="inline-block h-px w-10 bg-background/60" />
-            05 — Contact
+            05 - Contact
           </p>
         </div>
         <div className="col-span-12 lg:col-span-9">
@@ -561,7 +561,7 @@ function Footer() {
   return (
     <footer className="bg-foreground text-background/60">
       <div className="mx-auto flex max-w-[1400px] flex-wrap items-center justify-between gap-4 border-t border-background/15 px-6 py-6 font-display text-[11px] uppercase tracking-[0.22em] md:px-10">
-        <p>© 2026 — Supreeth Soundarapandiyan</p>
+        <p>© 2026 - Supreeth Soundarapandiyan</p>
         <p>Boston, MA</p>
         <a href="#" className="hover:text-background">Back to top ↑</a>
       </div>
@@ -573,7 +573,7 @@ function SectionLabel({ n, label }: { n: string; label: string }) {
   return (
     <p className="flex items-center gap-3 font-display text-[11px] uppercase tracking-[0.28em] text-muted-foreground">
       <span className="inline-block h-px w-10 bg-foreground" />
-      {n} — {label}
+      {n} - {label}
     </p>
   );
 }
