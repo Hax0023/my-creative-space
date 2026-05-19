@@ -201,9 +201,9 @@ function Hero() {
             Portfolio · CV · Cybersecurity
           </p>
           <h1 className="font-display text-[13vw] font-medium leading-[0.88] tracking-[-0.04em] md:text-[104px] xl:text-[136px]">
-            From <span style={{color: "#722F37"}}>red</span>
+            From <span style={{color: "#8B3A3A"}}>red</span>
             <br />
-            to <span className="italic" style={{color: "#1B2A4A"}}>blue</span>
+            to <span className="italic" style={{color: "#1E3A5F"}}>blue</span>
             <br />
             - building
             <br />
